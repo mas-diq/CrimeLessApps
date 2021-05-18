@@ -13,13 +13,13 @@
 
     <fragment
         android:id="@+id/navigation_history"
-        android:name="com.dicoding.crimelessapps.ui.dashboard.DashboardFragment"
+        android:name="com.dicoding.crimelessapps.ui.History.HistoryFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_history" />
 
     <fragment
         android:id="@+id/navigation_profile"
-        android:name="com.dicoding.crimelessapps.ui.notifications.NotificationsFragment"
+        android:name="com.dicoding.crimelessapps.ui.profile.ProfileFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_profile" />
 </navigation>
