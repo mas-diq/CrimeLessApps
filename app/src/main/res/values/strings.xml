@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">CrimeLess</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">History</string>
+    <string name="title_notifications">Profile</string>
+
+    <string name="Information">Information</string>
+    <string name="Information_value">Your house is safe and monitored via CCTV</string>
+
+    <string name="Confirmation">Confirmation</string>
+    <string name="Confirmation_value">Apps is successfully connected to the CCTV</string>
+
+    <string name="time_info">21:09 WIB</string>
+    <string name="seeMore">See More</string>
+
+    <string name="title_one_history">You can find your</string>
+    <string name="title_two_history">History Here!</string>
+</resources>
