@@ -3,12 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_marginTop="12dp"
     android:layout_height="wrap_content"
-    android:layout_marginHorizontal="16dp"
-    android:layout_marginVertical="4dp"
+    android:layout_marginHorizontal="24dp"
     android:background="@drawable/background"
     android:orientation="horizontal"
-    android:padding="16dp">
+    android:padding="18dp">
 
     <ImageView
         android:id="@+id/ic_information"
@@ -29,7 +29,7 @@
         android:layout_marginStart="24dp"
         android:fontFamily="@font/montserrat_bold"
         android:textColor="@color/Information"
-        android:textSize="28sp"
+        android:textSize="26sp"
         android:textStyle="bold"
         app:layout_constraintLeft_toRightOf="@+id/ic_information"
         app:layout_constraintTop_toTopOf="parent"
@@ -54,7 +54,7 @@
         android:layout_marginStart="12dp"
         android:backgroundTint="@color/white"
         android:fontFamily="@font/montserrat_medium"
-        android:textColor="@color/black"
+        android:textColor="@color/black_grey"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/ic_clock"
         app:layout_constraintStart_toEndOf="@+id/ic_clock"
@@ -69,7 +69,7 @@
         app:layout_constraintStart_toStartOf="@+id/tv_item_id"
         app:layout_constraintTop_toBottomOf="@+id/tv_item_id"
         app:srcCompat="@drawable/ic_clock"
-        app:tint="@color/black"
+        app:tint="@color/black_grey"
         tools:ignore="contentDescription" />
 
     <TextView
