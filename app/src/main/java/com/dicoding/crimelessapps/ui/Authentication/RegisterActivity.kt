@@ -55,7 +55,7 @@ class RegisterActivity : AppCompatActivity() {
     private fun registerUser(email: String, pass: String) {
         auth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener(this) { it ->
             if (it.isSuccessful) {
-                Intent(this@RegisterActivity, MainActivity::class.java).also {
+                Intent(this@RegisterActivity, ConfirmationActivity::class.java).also {
                     it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                     startActivity(it)
                 }

@@ -4,168 +4,130 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="24dp"
     android:paddingHorizontal="24dp"
     tools:context=".ui.profile.ProfileFragment">
 
     <ImageView
-        android:id="@+id/ic_signout"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="736dp"
-        android:layout_marginBottom="18dp"
-        android:src="@drawable/sign_out"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.015"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <ImageView
-        android:id="@+id/iv_profile"
+        android:id="@+id/img_profile"
         android:layout_width="170dp"
         android:layout_height="170dp"
         android:src="@drawable/ic_broken_image"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="80dp" />
-
-
-    <LinearLayout
-        android:id="@+id/linear_nama"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@+id/iv_profile"
-        tools:ignore="MissingConstraints">
-
-        <TextView
-            android:id="@+id/tv_nama"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:fontFamily="@font/montserrat_medium"
-            android:text="Name"
-            android:textAlignment="center"
-            android:textColor="@color/primaryDarkColor"
-            android:textSize="18sp" />
-    </LinearLayout>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tv_nama1"
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:text="@string/tv_name"
+        android:textAlignment="center"
+        android:textColor="@color/primaryDarkColor"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_profile" />
+
+    <TextView
+        android:id="@+id/tv_name_value"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
         android:fontFamily="@font/montserrat_regular"
-        android:maxLines="2"
-        android:text="Crimeless"
-        android:textAlignment="center"
-        android:textColor="@color/primaryDarkColor"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/linear_nama"
-        tools:ignore="MissingConstraints" />
-
-    <LinearLayout
-        android:id="@+id/linear_email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@+id/tv_nama1"
-        tools:ignore="MissingConstraints">
-
-        <TextView
-            android:id="@+id/tv_email"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:text="Email"
-            android:textAlignment="center"
-            android:textColor="@color/primaryDarkColor"
-            android:textSize="18sp" />
-
-    </LinearLayout>
+        android:text="@string/user_dummy"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
 
     <TextView
-        android:id="@+id/tv_email1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:maxLines="2"
-        android:text="crimeless.com"
-        android:textAlignment="center"
-        android:textColor="@color/primaryDarkColor"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/linear_email" />
-
-    <LinearLayout
-        android:id="@+id/linear_alamat"
+        android:id="@+id/tv_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@+id/tv_email1"
-        tools:ignore="MissingConstraints">
-
-
-        <TextView
-            android:id="@+id/tv_alamat"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:text="Alamat"
-            android:textAlignment="center"
-            android:textColor="@color/primaryDarkColor"
-            android:textSize="18sp" />
-
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/tv_alamat1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:maxLines="2"
-        android:text="jl. crimeless"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:text="@string/tv_email"
         android:textAlignment="center"
         android:textColor="@color/primaryDarkColor"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/linear_alamat"
-        tools:ignore="MissingConstraints" />
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_name_value"
+        app:layout_constraintTop_toBottomOf="@id/tv_name_value" />
 
-    <LinearLayout
-        android:id="@+id/linear_notelp"
+    <TextView
+        android:id="@+id/tv_email_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/emailDummy"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_email"
+        app:layout_constraintTop_toBottomOf="@+id/tv_email" />
+
+    <TextView
+        android:id="@+id/tv_address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@+id/tv_alamat1"
-        tools:ignore="MissingConstraints">
-
-
-        <TextView
-            android:id="@+id/tv_notelp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:text="No. Telp"
-            android:textAlignment="center"
-            android:textColor="@color/primaryDarkColor"
-            android:textSize="18sp" />
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/tv_notelp1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:maxLines="2"
-        android:text="08xxxxxxx"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:text="@string/tv_address"
         android:textAlignment="center"
         android:textColor="@color/primaryDarkColor"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/linear_notelp" />
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_email_value"
+        app:layout_constraintTop_toBottomOf="@id/tv_email_value" />
+
+    <TextView
+        android:id="@+id/tv_address_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/addressDummy"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_address"
+        app:layout_constraintTop_toBottomOf="@+id/tv_address" />
+
+    <TextView
+        android:id="@+id/tv_telp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:text="@string/phone_number"
+        android:textAlignment="center"
+        android:textColor="@color/primaryDarkColor"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_address_value"
+        app:layout_constraintTop_toBottomOf="@id/tv_address_value" />
+
+    <TextView
+        android:id="@+id/tv_telp_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/phoneNumberDummy"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_telp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_telp" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@color/primaryDarkColor"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/log_out"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_telp_value" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
