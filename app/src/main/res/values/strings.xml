@@ -24,5 +24,6 @@
     <string name="register_here">Register Here!</string>
     <string name="register_now">Register Now</string>
     <string name="back_to_login">Back to Login</string>
-    <string name="use_password">*Use password min 6 char</string>
+    <string name="use_password">Password length min 6 Char</string>
+    <string name="successfully_created">Successfully Created!</string>
 </resources>

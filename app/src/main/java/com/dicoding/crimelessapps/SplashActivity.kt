@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
 import com.dicoding.crimelessapps.databinding.ActivitySplashBinding
+import com.dicoding.crimelessapps.ui.Authentication.LoginActivity
 
 class SplashActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySplashBinding
@@ -18,7 +19,7 @@ class SplashActivity : AppCompatActivity() {
 
         // Delay splash 1 sec
         Handler(mainLooper).postDelayed({
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
             finish()
         }, 3000)

@@ -50,7 +50,7 @@
             android:fontFamily="@font/montserrat_medium"
             android:text="Name"
             android:textAlignment="center"
-            android:textColor="@color/profile"
+            android:textColor="@color/primaryDarkColor"
             android:textSize="18sp" />
     </LinearLayout>
 
@@ -84,7 +84,7 @@
             android:layout_marginLeft="20dp"
             android:text="Email"
             android:textAlignment="center"
-            android:textColor="@color/profile"
+            android:textColor="@color/primaryDarkColor"
             android:textSize="18sp" />
 
     </LinearLayout>
@@ -118,7 +118,7 @@
             android:layout_marginLeft="20dp"
             android:text="Alamat"
             android:textAlignment="center"
-            android:textColor="@color/profile"
+            android:textColor="@color/primaryDarkColor"
             android:textSize="18sp" />
 
     </LinearLayout>
@@ -153,7 +153,7 @@
             android:layout_marginLeft="20dp"
             android:text="No. Telp"
             android:textAlignment="center"
-            android:textColor="@color/profile"
+            android:textColor="@color/primaryDarkColor"
             android:textSize="18sp" />
     </LinearLayout>
 

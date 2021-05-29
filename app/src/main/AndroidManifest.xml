@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CrimeLessApps">
-        <activity android:name=".ui.Authentication.RegisterActivity"></activity>
+        <activity android:name=".ui.Authentication.ConfirmationActivity">
+
+        </activity>
+        <activity android:name=".ui.Authentication.RegisterActivity" />
         <activity android:name=".ui.Authentication.LoginActivity" />
         <activity
             android:name=".MainActivity"
