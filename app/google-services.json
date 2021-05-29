@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1019877055419",
+    "project_id": "crimelessapps",
+    "storage_bucket": "crimelessapps.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1019877055419:android:1f18e1d780406c7f3d829e",
+        "android_client_info": {
+          "package_name": "com.dicoding.crimelessapps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1019877055419-lpi46t9n4qgc4jlbrhcmr5dg9uh7arn8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAzoijFReRQ8351frykOBQOkbge8tbQnE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1019877055419-lpi46t9n4qgc4jlbrhcmr5dg9uh7arn8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

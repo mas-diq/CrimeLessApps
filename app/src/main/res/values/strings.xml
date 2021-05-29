@@ -4,7 +4,7 @@
     <string name="title_dashboard">History</string>
     <string name="title_notifications">Profile</string>
 
-    <string name="Information">Information</string>
+    <string name="Information">Information New</string>
     <string name="Information_value">Your house is safe and monitored via CCTV</string>
 
     <string name="Confirmation">Confirmation</string>
@@ -15,4 +15,24 @@
 
     <string name="title_one_history">You can find your</string>
     <string name="title_two_history">History Here!</string>
+    <string name="login">Login</string>
+    <string name="register">REGISTER</string>
+    <string name="email">Email</string>
+    <string name="welcome">Welcome!</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="password">Password</string>
+    <string name="register_here">Register Here!</string>
+    <string name="register_now">Register Now</string>
+    <string name="back_to_login">Back to Login</string>
+    <string name="use_password">Password length min 6 Char</string>
+    <string name="successfully_created">Successfully Created!</string>
+    <string name="addressDummy">Tangerang, Indonesia</string>
+    <string name="tv_address">Address</string>
+    <string name="emailDummy">UserDummy@gmail.com</string>
+    <string name="tv_email">Email</string>
+    <string name="user_dummy">User Dummy</string>
+    <string name="tv_name">Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="phoneNumberDummy">0821123456789</string>
+    <string name="log_out">Log Out</string>
 </resources>

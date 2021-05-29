@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="primaryColor">#d32f2f</color>
-    <color name="primaryLightColor">#ff6659</color>
-    <color name="primaryDarkColor">#9a0007</color>
+    <color name="primaryColor">#7486A2</color>
+    <color name="primaryLightColor">#5f708c</color>
+    <color name="primaryDarkColor">#2e486b</color>
     <color name="primaryTextColor">#ffffff</color>
     <color name="grey">#FEDCDCDC</color>
     <color name="black">#232323</color>
+    <color name="black_grey">#7F7F7F</color>
     <color name="white">#FFFFFFFF</color>
 
     <color name="Information">#0275db</color>
     <color name="Confirmation">#5cb85c</color>
     <color name="Alert">#d9534f</color>
+
+<!--    <color name="profile">#07569C</color>-->
+<!--    <color name="profile1">#1373C8</color>-->
+<!--    <color name="bgprofile">#806DFFCC</color>-->
 </resources>
