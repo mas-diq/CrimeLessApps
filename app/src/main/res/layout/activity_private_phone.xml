@@ -10,7 +10,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="0dp"
-        android:layout_height="380dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="42dp"
@@ -30,7 +30,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserrat_bold"
-                android:text="One More Things!"
+                android:text="@string/one_more_things"
                 android:textColor="@color/primaryDarkColor"
                 android:textSize="28sp"
                 android:textStyle="bold"
@@ -42,13 +42,13 @@
                 android:id="@+id/tv_desc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="2dp"
                 android:layout_marginTop="12dp"
                 android:fontFamily="@font/montserrat_regular"
                 android:text="@string/desc_2"
                 android:textAlignment="center"
                 android:textColor="@color/black_grey"
-                android:textSize="16sp"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -72,7 +72,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="6dp"
                 android:fontFamily="@font/montserrat_regular"
-                android:hint="@string/phone_number"
+                android:hint="@string/et_phone_number"
                 android:importantForAutofill="no"
                 android:inputType="phone"
                 android:textColor="@color/black"
@@ -99,7 +99,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserrat_regular"
-                android:hint="@string/phone_number"
+                android:hint="@string/et_phone_number2"
                 android:importantForAutofill="no"
                 android:inputType="phone"
                 android:textColor="@color/black"
@@ -108,7 +108,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/tv_phone_2" />
 
             <Button
-                android:id="@+id/btnRegisterNow"
+                android:id="@+id/btnFinish"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"

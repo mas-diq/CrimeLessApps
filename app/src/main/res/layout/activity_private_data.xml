@@ -10,7 +10,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="0dp"
-        android:layout_height="448dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="42dp"
@@ -47,7 +47,7 @@
                 android:text="@string/desc_1"
                 android:textAlignment="center"
                 android:textColor="@color/black_grey"
-                android:textSize="16sp"
+                android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -134,7 +134,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/tv_address" />
 
             <Button
-                android:id="@+id/btnRegisterNow"
+                android:id="@+id/btnContinue"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"

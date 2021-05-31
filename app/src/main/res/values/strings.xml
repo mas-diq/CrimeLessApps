@@ -28,21 +28,21 @@
     <string name="successfully_created">Successfully Created!</string>
     <string name="addressDummy">Tangerang, Indonesia</string>
     <string name="tv_address">Address</string>
-    <string name="et_address">Your Address</string>
+    <string name="et_address">Jakarta, Indonesia</string>
     <string name="emailDummy">UserDummy@gmail.com</string>
     <string name="tv_email">Email</string>
     <string name="user_dummy">User Dummy</string>
     <string name="tv_name">Name</string>
-    <string name="et_name">Your Name</string>
+    <string name="et_name">Full Name</string>
     <string name="phone_number">Phone Number</string>
-    <string name="et_phone_number">Your Number</string>
-    <string name="phoneNumberDummy">0821123456789</string>
+    <string name="et_phone_number">082114777906</string>
+    <string name="et_phone_number2">08219032902</string>
     <string name="log_out">Log Out</string>
     <string name="complete_your_data">Private Data</string>
     <string name="cnt">Continue</string>
-    <string name="desc_2">Please enter your 2 priority numbers</string>
+    <string name="desc_2">Please enter 2 different priority numbers that can be contacted</string>
     <string name="desc_1">Please enter your real data</string>
-    <string name="phone_number">Phone Number</string>
     <string name="priority_two">Priority Two</string>
     <string name="finish">Finish</string>
+    <string name="one_more_things">One More Things!</string>
 </resources>

@@ -12,10 +12,12 @@
         android:id="@+id/img_profile"
         android:layout_width="170dp"
         android:layout_height="170dp"
-        android:src="@drawable/ic_broken_image"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_user"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/primaryDarkColor" />
 
     <TextView
         android:id="@+id/tv_name"
@@ -87,7 +89,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="6dp"
         android:fontFamily="@font/montserrat_regular"
-        android:text="@string/phoneNumberDummy"
+        android:text="@string/et_phone_number"
         android:textColor="@color/black"
         android:textSize="22sp"
         app:layout_constraintStart_toStartOf="@+id/tv_telp"
@@ -124,9 +126,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:background="@color/primaryDarkColor"
+        android:backgroundTint="@color/primaryDarkColor"
         android:fontFamily="@font/montserrat_bold"
-
         android:text="@string/log_out"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"

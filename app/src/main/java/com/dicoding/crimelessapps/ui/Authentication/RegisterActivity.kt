@@ -7,9 +7,11 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.dicoding.crimelessapps.MainActivity
 import com.dicoding.crimelessapps.R
+import com.dicoding.crimelessapps.ui.Register.PrivateDataActivity
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_register.*
+import kotlinx.coroutines.delay
 
 class RegisterActivity : AppCompatActivity() {
 
@@ -41,12 +43,11 @@ class RegisterActivity : AppCompatActivity() {
                 etPasswordRegister.requestFocus()
                 return@setOnClickListener
             }
-
             registerUser(email, pass)
         }
 
         btnBackToLogin.setOnClickListener {
-            Intent(this@RegisterActivity, LoginActivity::class.java).also {
+            Intent(this@RegisterActivity, RegisterActivity::class.java).also {
                 startActivity(it)
             }
         }
@@ -55,7 +56,9 @@ class RegisterActivity : AppCompatActivity() {
     private fun registerUser(email: String, pass: String) {
         auth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener(this) { it ->
             if (it.isSuccessful) {
-                Intent(this@RegisterActivity, ConfirmationActivity::class.java).also {
+                Toast.makeText(this@RegisterActivity, "Successfully Save Data", Toast.LENGTH_SHORT)
+                    .show()
+                Intent(this@RegisterActivity, PrivateDataActivity::class.java).also {
                     it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                     startActivity(it)
                 }
