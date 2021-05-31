@@ -84,7 +84,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_email_value" />
 
     <TextView
-        android:id="@+id/tv_telp_value"
+        android:id="@+id/tv_phone_value"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="6dp"
@@ -106,8 +106,8 @@
         android:textAlignment="center"
         android:textColor="@color/primaryDarkColor"
         android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="@+id/tv_telp_value"
-        app:layout_constraintTop_toBottomOf="@+id/tv_telp_value" />
+        app:layout_constraintStart_toStartOf="@+id/tv_phone_value"
+        app:layout_constraintTop_toBottomOf="@+id/tv_phone_value" />
 
     <TextView
         android:id="@+id/tv_address_value"

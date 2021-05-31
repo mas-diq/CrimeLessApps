@@ -10,7 +10,13 @@ import androidx.lifecycle.ViewModelProvider
 import com.dicoding.crimelessapps.databinding.FragmentProfileBinding
 import com.dicoding.crimelessapps.ui.Authentication.LoginActivity
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.fragment_profile.*
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.tasks.await
 
 class ProfileFragment : Fragment() {
 
@@ -42,6 +48,19 @@ class ProfileFragment : Fragment() {
                 startActivity(it)
             }
         }
+        getData()
+    }
+
+    private fun getData() = CoroutineScope(Dispatchers.Main).launch {
+        val collectionRef = Firebase.firestore.collection("PrivateData")
+        val querySnapshot = collectionRef.get().await()
+        val data = querySnapshot.documents[1]
+        val name = data.get("name")
+        val address = data.get("address")
+        val phone = data.get("phone")
+        tv_name_value.text = name.toString()
+        tv_address_value.text = address.toString()
+        tv_phone_value.text = phone.toString()
     }
 
     override fun onDestroyView() {
