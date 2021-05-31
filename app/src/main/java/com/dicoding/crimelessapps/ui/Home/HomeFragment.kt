@@ -1,4 +1,4 @@
-package com.dicoding.crimelessapps.ui.home
+package com.dicoding.crimelessapps.ui.Home
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -21,7 +21,7 @@ class HomeFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         homeViewModel =
             ViewModelProvider(this).get(HomeViewModel::class.java)
 

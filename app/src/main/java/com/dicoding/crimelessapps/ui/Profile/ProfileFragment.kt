@@ -1,4 +1,4 @@
-package com.dicoding.crimelessapps.ui.profile
+package com.dicoding.crimelessapps.ui.Profile
 
 import android.content.Intent
 import android.os.Bundle

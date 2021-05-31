@@ -1,4 +1,4 @@
-package com.dicoding.crimelessapps.ui.profile
+package com.dicoding.crimelessapps.ui.Profile
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

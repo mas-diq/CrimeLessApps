@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_margin="24dp"
     android:paddingHorizontal="24dp"
-    tools:context=".ui.profile.ProfileFragment">
+    tools:context=".ui.Profile.ProfileFragment">
 
     <ImageView
         android:id="@+id/img_profile"
@@ -68,32 +68,8 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_email" />
 
     <TextView
-        android:id="@+id/tv_address"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:fontFamily="@font/montserrat_semi_bold"
-        android:text="@string/tv_address"
-        android:textAlignment="center"
-        android:textColor="@color/primaryDarkColor"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="@+id/tv_email_value"
-        app:layout_constraintTop_toBottomOf="@id/tv_email_value" />
-
-    <TextView
-        android:id="@+id/tv_address_value"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="6dp"
-        android:fontFamily="@font/montserrat_regular"
-        android:text="@string/addressDummy"
-        android:textColor="@color/black"
-        android:textSize="22sp"
-        app:layout_constraintStart_toStartOf="@+id/tv_address"
-        app:layout_constraintTop_toBottomOf="@+id/tv_address" />
-
-    <TextView
         android:id="@+id/tv_telp"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -102,8 +78,8 @@
         android:textAlignment="center"
         android:textColor="@color/primaryDarkColor"
         android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="@+id/tv_address_value"
-        app:layout_constraintTop_toBottomOf="@id/tv_address_value" />
+        app:layout_constraintStart_toStartOf="@+id/tv_email_value"
+        app:layout_constraintTop_toBottomOf="@+id/tv_email_value" />
 
     <TextView
         android:id="@+id/tv_telp_value"
@@ -117,6 +93,32 @@
         app:layout_constraintStart_toStartOf="@+id/tv_telp"
         app:layout_constraintTop_toBottomOf="@+id/tv_telp" />
 
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:text="@string/tv_address"
+        android:textAlignment="center"
+        android:textColor="@color/primaryDarkColor"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_telp_value"
+        app:layout_constraintTop_toBottomOf="@+id/tv_telp_value" />
+
+    <TextView
+        android:id="@+id/tv_address_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/addressDummy"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_address"
+        app:layout_constraintTop_toBottomOf="@+id/tv_address" />
+
     <Button
         android:id="@+id/btn_logout"
         android:layout_width="match_parent"
@@ -124,10 +126,11 @@
         android:layout_marginTop="24dp"
         android:background="@color/primaryDarkColor"
         android:fontFamily="@font/montserrat_bold"
+
         android:text="@string/log_out"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_telp_value" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_address_value" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
