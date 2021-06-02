@@ -4,57 +4,57 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginHorizontal="16dp"
-    android:layout_marginVertical="4dp"
+    android:layout_marginHorizontal="24dp"
+    android:layout_marginTop="12dp"
     android:background="@drawable/background"
     android:orientation="horizontal"
-    android:padding="16dp">
+    android:padding="18dp">
 
     <ImageView
-        android:id="@+id/ic_information"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/ic_icon"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
         android:layout_marginStart="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_confirmation"
-        tools:ignore="contentDescription"
-        app:tint="@color/Confirmation" />
+        app:srcCompat="@drawable/ic_information"
+        tools:ignore="contentDescription" />
 
     <TextView
-        android:id="@+id/tv_item_condition"
+        android:id="@+id/tv_item_status"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:fontFamily="@font/montserrat_bold"
-        android:textColor="@color/Confirmation"
-        android:textSize="28sp"
+        android:textColor="@color/black"
+        android:textSize="26sp"
         android:textStyle="bold"
-        app:layout_constraintLeft_toRightOf="@+id/ic_information"
+        app:layout_constraintLeft_toRightOf="@+id/ic_icon"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="@string/Information" />
 
     <TextView
-        android:id="@+id/tv_item_id"
-        android:layout_width="260dp"
+        android:id="@+id/tv_item_desc"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:fontFamily="@font/montserrat_regular"
-        android:textColor="@color/black"
+        android:textColor="@color/black_grey"
         android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="@+id/tv_item_condition"
-        app:layout_constraintTop_toBottomOf="@id/tv_item_condition"
-        tools:text="@string/Confirmation_value" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_item_status"
+        app:layout_constraintTop_toBottomOf="@id/tv_item_status"
+        tools:text="@string/Information_value" />
 
     <TextView
-        android:id="@+id/tv_item_message"
+        android:id="@+id/tv_item_clock"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
         android:backgroundTint="@color/white"
         android:fontFamily="@font/montserrat_medium"
-        android:textColor="@color/black"
+        android:textColor="@color/black_grey"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/ic_clock"
         app:layout_constraintStart_toEndOf="@+id/ic_clock"
@@ -66,26 +66,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        app:layout_constraintStart_toStartOf="@+id/tv_item_id"
-        app:layout_constraintTop_toBottomOf="@+id/tv_item_id"
+        app:layout_constraintStart_toStartOf="@+id/tv_item_desc"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_desc"
         app:srcCompat="@drawable/ic_clock"
-        tools:ignore="contentDescription"
-        app:tint="@color/black" />
+        app:tint="@color/black_grey"
+        tools:ignore="contentDescription" />
 
     <TextView
         android:id="@+id/tv_btn"
-        android:layout_width="86dp"
-        android:layout_height="27dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:background="@drawable/background"
-        android:backgroundTint="@color/Confirmation"
+        android:backgroundTint="@color/black"
         android:fontFamily="@font/montserrat_bold"
+        android:gravity="center"
         android:paddingHorizontal="8dp"
-        android:paddingVertical="4dp"
+        android:paddingVertical="6dp"
         android:textColor="@color/white"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="@+id/tv_item_message"
+        app:layout_constraintBottom_toBottomOf="@+id/ic_clock"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tv_item_message"
+        app:layout_constraintTop_toTopOf="@+id/ic_clock"
         tools:text="@string/seeMore" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
