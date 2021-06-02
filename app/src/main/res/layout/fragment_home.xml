@@ -52,11 +52,11 @@
 
         <ImageView
             android:id="@+id/video"
-            android:layout_width="380dp"
-            android:layout_height="120dp"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_marginHorizontal="24dp"
             android:layout_marginTop="12dp"
-            android:background="@drawable/background"
-            android:src="@drawable/ic_broken_image"
+            android:src="@drawable/img_dummy"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_cctv" />
@@ -78,7 +78,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            android:layout_marginBottom="42dp"
+            android:paddingBottom="64dp"
             app:layout_constraintTop_toBottomOf="@id/tv_rv"
             tools:listitem="@layout/item_content" />
 

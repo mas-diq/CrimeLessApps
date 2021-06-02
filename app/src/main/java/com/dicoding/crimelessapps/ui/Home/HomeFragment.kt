@@ -1,29 +1,25 @@
 package com.dicoding.crimelessapps.ui.Home
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.dicoding.crimelessapps.databinding.FragmentHomeBinding
-import com.dicoding.crimelessapps.ui.adapter.Adapter
+import com.dicoding.crimelessapps.ui.Data.DataNotif
+import com.dicoding.crimelessapps.ui.adapter.AdapterText
+import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
-import com.google.firebase.storage.ktx.storage
 import kotlinx.android.synthetic.main.fragment_home.*
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.tasks.await
-import kotlinx.coroutines.withContext
 
 class HomeFragment : Fragment() {
 
+    private val db = Firebase.firestore
     private lateinit var homeViewModel: HomeViewModel
     private var _binding: FragmentHomeBinding? = null
-    val imageRef = Firebase.storage.reference
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -35,34 +31,40 @@ class HomeFragment : Fragment() {
             ViewModelProvider(this).get(HomeViewModel::class.java)
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
-        listFiles()
+        getData()
         return root
+    }
+
+    private fun getData() {
+        db.collection("DummyData")
+            .get()
+            .addOnSuccessListener {
+                val listContent: ArrayList<DataNotif> = ArrayList()
+                listContent.clear()
+                for (doc in it) {
+                    listContent.add(
+                        (DataNotif(
+                            doc.data["Icon"].toString(),
+                            doc.data["Title"].toString(),
+                            doc.data["Desc"].toString(),
+                            doc.data["Time"].toString()
+                        ))
+                    )
+                }
+
+                val adapterTx = AdapterText(listContent)
+                rv_content.apply {
+                    layoutManager = LinearLayoutManager(context)
+                    adapter = adapterTx
+                }
+            }
+            .addOnFailureListener {
+                Log.v("Failed", "to get the data!")
+            }
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
-    }
-
-    private fun listFiles() = CoroutineScope(Dispatchers.IO).launch {
-        try {
-            val images = imageRef.child("Icons/").listAll().await()
-            val imageUrls = mutableListOf<String>()
-            for (img in images.items) {
-                val url = img.downloadUrl.await()
-                imageUrls.add(url.toString())
-            }
-            withContext(Dispatchers.Main) {
-                val imageAdapter = Adapter(imageUrls)
-                rv_content.apply {
-                    adapter = imageAdapter
-                    layoutManager = LinearLayoutManager(activity)
-                }
-            }
-        } catch (e: Exception) {
-            withContext(Dispatchers.Main) {
-                Toast.makeText(activity, e.message, Toast.LENGTH_SHORT).show()
-            }
-        }
     }
 }
