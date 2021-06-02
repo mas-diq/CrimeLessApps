@@ -44,6 +44,7 @@ class HistoryFragment : Fragment() {
         db.collection("DummyData")
             .get()
             .addOnSuccessListener {
+                progressBar.visibility = View.INVISIBLE
                 val listContent: ArrayList<DataNotif> = ArrayList()
                 listContent.clear()
                 for (doc in it) {

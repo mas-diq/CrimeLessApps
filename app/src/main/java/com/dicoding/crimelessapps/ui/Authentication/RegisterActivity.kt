@@ -11,7 +11,6 @@ import com.dicoding.crimelessapps.ui.Register.PrivateDataActivity
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_register.*
-import kotlinx.coroutines.delay
 
 class RegisterActivity : AppCompatActivity() {
 

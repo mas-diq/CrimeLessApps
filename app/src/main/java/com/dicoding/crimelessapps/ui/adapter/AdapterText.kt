@@ -14,16 +14,10 @@ class AdapterText(private val contents: List<DataNotif>) :
     RecyclerView.Adapter<AdapterText.ContentHolder>() {
     inner class ContentHolder(view: View) : RecyclerView.ViewHolder(view) {
 
-        val icons = view.ic_icon
-        val status = view.tv_item_status
-        val desc = view.tv_item_desc
-        val time = view.tv_item_clock
-
-//        fun bindContent(data: DataNotif) {
-//            status.text = data.title
-//            desc.text = data.desc
-//            time.text = data.time
-//        }
+        val icons = view.ic_icon!!
+        val status = view.tv_item_status!!
+        val desc = view.tv_item_desc!!
+        val time = view.tv_item_clock!!
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ContentHolder {

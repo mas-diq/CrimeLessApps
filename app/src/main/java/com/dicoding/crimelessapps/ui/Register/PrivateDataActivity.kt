@@ -21,24 +21,24 @@ class PrivateDataActivity : AppCompatActivity() {
         setContentView(R.layout.activity_private_data)
 
         btnContinue.setOnClickListener {
-            val Name = etName.text.toString()
-            val Phone = etPhone.text.toString()
-            val Address = etAddress.text.toString()
-            val privateData = PrivateData(Name, Phone, Address)
+            val name = etName.text.toString()
+            val phone = etPhone.text.toString()
+            val address = etAddress.text.toString()
+            val privateData = PrivateData(name, phone, address)
 
-            if (Name.isEmpty()){
+            if (name.isEmpty()){
                 etName.error = "Name can't empty!"
                 etName.requestFocus()
                 return@setOnClickListener
             }
 
-            if (Phone.isEmpty()){
+            if (phone.isEmpty()){
                 etPhone.error = "Phone can't empty!"
                 etPhone.requestFocus()
                 return@setOnClickListener
             }
 
-            if (Address.isEmpty()){
+            if (address.isEmpty()){
                 etAddress.error = "Address can't empty!"
                 etAddress.requestFocus()
                 return@setOnClickListener

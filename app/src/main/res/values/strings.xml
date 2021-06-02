@@ -45,4 +45,7 @@
     <string name="priority_two">Priority Two</string>
     <string name="finish">Finish</string>
     <string name="one_more_things">One More Things!</string>
+    <string name="priority_one">Priority One</string>
+    <string name="living_room_cctv">Living Room CCTV</string>
+    <string name="latest_acitivity">Latest Acitivity</string>
 </resources>
