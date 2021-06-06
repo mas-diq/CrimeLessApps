@@ -4,8 +4,8 @@
     <string name="title_dashboard">History</string>
     <string name="title_notifications">Profile</string>
 
-    <string name="Information">Information New</string>
-    <string name="Information_value">Your house is safe and monitored via CCTV</string>
+    <string name="Information">Information</string>
+    <string name="Information_value">Your house is safe and monitored via CCTV - Living Room. Always turn on the notification feature that has been provided to fully support this application.</string>
 
     <string name="Confirmation">Confirmation</string>
     <string name="Confirmation_value">Apps is successfully connected to the CCTV</string>
@@ -48,4 +48,5 @@
     <string name="priority_one">Priority One</string>
     <string name="living_room_cctv">Living Room CCTV</string>
     <string name="latest_acitivity">Latest Acitivity</string>
+    <string name="back">Back</string>
 </resources>
