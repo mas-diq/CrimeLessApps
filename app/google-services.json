@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "1019877055419",
-    "project_id": "crimelessapps",
-    "storage_bucket": "crimelessapps.appspot.com"
+    "project_number": "316356875642",
+    "project_id": "crimeless",
+    "storage_bucket": "crimeless.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1019877055419:android:1f18e1d780406c7f3d829e",
+        "mobilesdk_app_id": "1:316356875642:android:7721ffdb47c862c2e672c3",
         "android_client_info": {
           "package_name": "com.dicoding.crimelessapps"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1019877055419-lpi46t9n4qgc4jlbrhcmr5dg9uh7arn8.apps.googleusercontent.com",
+          "client_id": "316356875642-ij80o46oouvsejoq5vo8dmlh0pp6ug8p.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAAzoijFReRQ8351frykOBQOkbge8tbQnE"
+          "current_key": "AIzaSyC4BH3G-j-NCpUes7ycvlUZ_clXeLHpN3I"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1019877055419-lpi46t9n4qgc4jlbrhcmr5dg9uh7arn8.apps.googleusercontent.com",
+              "client_id": "316356875642-ij80o46oouvsejoq5vo8dmlh0pp6ug8p.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
