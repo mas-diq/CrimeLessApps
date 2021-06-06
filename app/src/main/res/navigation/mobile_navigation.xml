@@ -12,10 +12,10 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_history"
-        android:name="com.dicoding.crimelessapps.ui.History.HistoryFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_history" />
+        android:id="@+id/navigation_activity"
+        android:name="com.dicoding.crimelessapps.ui.Detail.ActivityFragment"
+        android:label="@string/title_Activity"
+        tools:layout="@layout/fragment_activity" />
 
     <fragment
         android:id="@+id/navigation_profile"

@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CrimeLessApps">
-        <activity android:name=".DetailActivity"></activity>
-        <activity android:name=".ui.Register.PrivatePhoneActivity"></activity>
+        <activity android:name=".ui.Register.PrivatePhoneActivity">
+
+        </activity>
         <activity android:name=".ui.Register.PrivateDataActivity" />
         <activity android:name=".ui.Authentication.ConfirmationActivity" />
         <activity android:name=".ui.Authentication.RegisterActivity" />
