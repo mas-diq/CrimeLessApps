@@ -47,22 +47,22 @@ class ProfileFragment : Fragment() {
                 startActivity(it)
             }
         }
-        getData()
+//        getData()
     }
 
-    private fun getData() = CoroutineScope(Dispatchers.Main).launch {
-        val collectionRef = Firebase.firestore.collection("PrivateData")
-        val querySnapshot = collectionRef.get().await()
-        val data = querySnapshot.documents[1]
-        val name = data.get("name")
-        val address = data.get("address")
-        val phone = data.get("phone")
-//        val email = data.get("email")
-        tv_name_value.text = name.toString()
-        tv_address_value.text = address.toString()
-        tv_phone_value.text = phone.toString()
-//        tv_email_value.text = email.toString()
-    }
+//    private fun getData() = CoroutineScope(Dispatchers.Main).launch {
+//        val collectionRef = Firebase.firestore.collection("PrivateData")
+//        val querySnapshot = collectionRef.get().await()
+//        val data = querySnapshot.documents[1]
+//        val name = data.get("name")
+//        val address = data.get("address")
+//        val phone = data.get("phone")
+////        val email = data.get("email")
+//        tv_name_value.text = name.toString()
+//        tv_address_value.text = address.toString()
+//        tv_phone_value.text = phone.toString()
+////        tv_email_value.text = email.toString()
+//    }
 
     override fun onDestroyView() {
         super.onDestroyView()
