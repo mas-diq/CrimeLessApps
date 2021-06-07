@@ -19,12 +19,13 @@
 
 <!-- ABOUT THE PROJECT -->
 ## Prototype The Project
-<img align="left" width="64px" src="https://github.com/mas-diq/CrimeLessApps/blob/master/gif1.gif" />
-<img align="left" width="64px" src="https://github.com/mas-diq/CrimeLessApps/blob/master/gif2.gif" />
-<img align="left" width="64px" src="https://github.com/mas-diq/CrimeLessApps/blob/master/gif3.gif" />
-<img align="left" width="64px" src="https://github.com/mas-diq/CrimeLessApps/blob/master/gif4.gif" />
-<img align="left" width="64px" src="https://github.com/mas-diq/CrimeLessApps/blob/master/gif5.gif" />
+<img align="left" width="265px" src="https://github.com/mas-diq/CrimeLessApps/blob/master/gif1.gif" />
+<img align="left" width="265px" src="https://github.com/mas-diq/CrimeLessApps/blob/master/gif2.gif" />
+<img align="left" width="265px" src="https://github.com/mas-diq/CrimeLessApps/blob/master/gif3.gif" />
+<img align="left" width="265px" src="https://github.com/mas-diq/CrimeLessApps/blob/master/gif4.gif" />
+<img align="left" width="265px" src="https://github.com/mas-diq/CrimeLessApps/blob/master/gif5.gif" />
 
+<br>
 <!-- ABOUT THE PROJECT -->
 ## Ideas Behind The Project
 Leaving a house empty often leads to criminal acts that cause loss to its owner. Around 70% of Jakarta citizens are worried about that (BPS). Therefore, we want to develop a system that can help the owner of the house to monitor it remotely through an android application. The system, with a machine learning model deployed in the cloud as one of its components, will be able to detect the presence of a human by analyzing the recorded video of the house and notify the house owner when the system detects the presence of a human. The competitive advantage of this system compared to other existing services like Nest Cam is that it can send blast notifications to registered numbers (e.g. the authority like police and security guards, neighbours, etc.) through WhatsApp messaging application.
