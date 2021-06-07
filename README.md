@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://drive.google.com/file/d/1JUKlIBW9ULTSw_8ODGCcZkADOjmt_eBV/view?usp=sharing">
+  <a href="https://github.com/mas-diq/CrimeLessApps/blob/master/Crimeless_Logo.png">
     <img alt="Logo CrimelessApps" width="80" height="80" src="google drive">
   </a>
 
@@ -15,6 +15,15 @@
     <a href="https://github.com/mas-diq/CrimeLessApps/tree/master"><strong>Explore the docs »</strong></a>
   </p>
 </p>
+<br>
+
+<!-- ABOUT THE PROJECT -->
+## Prototype The Project
+<img align="left" width="64px" src="https://github.com/mas-diq/CrimeLessApps/blob/master/gif1.gif" />
+<img align="left" width="64px" src="https://github.com/mas-diq/CrimeLessApps/blob/master/gif2.gif" />
+<img align="left" width="64px" src="https://github.com/mas-diq/CrimeLessApps/blob/master/gif3.gif" />
+<img align="left" width="64px" src="https://github.com/mas-diq/CrimeLessApps/blob/master/gif4.gif" />
+<img align="left" width="64px" src="https://github.com/mas-diq/CrimeLessApps/blob/master/gif5.gif" />
 
 <!-- ABOUT THE PROJECT -->
 ## Ideas Behind The Project
