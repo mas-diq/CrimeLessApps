@@ -57,9 +57,11 @@ class ProfileFragment : Fragment() {
         val name = data.get("name")
         val address = data.get("address")
         val phone = data.get("phone")
+//        val email = data.get("email")
         tv_name_value.text = name.toString()
         tv_address_value.text = address.toString()
         tv_phone_value.text = phone.toString()
+//        tv_email_value.text = email.toString()
     }
 
     override fun onDestroyView() {

@@ -29,14 +29,14 @@
     <string name="addressDummy">Tangerang, Indonesia</string>
     <string name="tv_address">Address</string>
     <string name="et_address">Jakarta, Indonesia</string>
-    <string name="emailDummy">UserDummy@gmail.com</string>
+    <string name="emailDummy">adminDummy@gmail.com</string>
     <string name="tv_email">Email</string>
     <string name="user_dummy">User Dummy</string>
     <string name="tv_name">Name</string>
     <string name="et_name">Full Name</string>
     <string name="phone_number">Phone Number</string>
-    <string name="et_phone_number">082114777906</string>
-    <string name="et_phone_number2">08219032902</string>
+    <string name="et_phone_number">082114888906</string>
+    <string name="et_phone_number2">082114555906</string>
     <string name="log_out">Log Out</string>
     <string name="complete_your_data">Private Data</string>
     <string name="cnt">Continue</string>
@@ -51,4 +51,6 @@
     <string name="back">Back</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="phone_one">Phone to Call 1</string>
+    <string name="phone_two">Phone to Call 2</string>
 </resources>
