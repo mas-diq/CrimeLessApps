@@ -1,10 +1,14 @@
 package com.dicoding.crimelessapps.ui.Home
 
+import android.R
+import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.MediaController
+import android.widget.VideoView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -13,7 +17,9 @@ import com.dicoding.crimelessapps.ui.Data.DataNotif
 import com.dicoding.crimelessapps.ui.adapter.AdapterText
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_home.*
+
 
 class HomeFragment : Fragment() {
 
@@ -32,8 +38,18 @@ class HomeFragment : Fragment() {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
         getData()
+//        getVideo()
         return root
     }
+
+//    private fun getVideo() {
+//        val controller = MediaController(context)
+//        controller.setAnchorView(videoView)
+//        videoView.setMediaController(controller)
+//        videoView.setVideoPath("https://www.youtube.com/watch?v=UQ4Yg_HUBFY")
+//        videoView.requestFocus()
+//        videoView.start()
+//    }
 
     private fun getData() {
         db.collection("DummyData")
