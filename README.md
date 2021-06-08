@@ -13,7 +13,7 @@
 <br>
 
 <!-- ABOUT THE PROJECT -->
-## Prototype The Project :star2:
+## Project's Prototype :star2:
 <p align="center">
 <img  width="220px" src="https://github.com/mas-diq/CrimeLessApps/blob/master/gif1.gif" />
 <img  width="220px" src="https://github.com/mas-diq/CrimeLessApps/blob/master/gif2.gif" />
@@ -70,12 +70,6 @@ MIT License
 
 Copyright (c) 2021 Muhammad Shiddiq Fathullah
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to The following copyright and permissions notice will be included in all copies or substantial portions of the Software
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
