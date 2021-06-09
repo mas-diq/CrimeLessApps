@@ -5,7 +5,7 @@
     <string name="title_notifications">Profile</string>
 
     <string name="Information">Information</string>
-    <string name="Information_value">Your house is safe and monitored via CCTV - Living Room. Always turn on the notification feature that has been provided to fully support this application.</string>
+    <string name="Information_value">Your house is monitored and safe via CCTV - Living Room. Always turn on the notification feature that has been provided to fully support this application.</string>
 
     <string name="Confirmation">Confirmation</string>
     <string name="Confirmation_value">Apps is successfully connected to the CCTV</string>

@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.dicoding.crimelessapps.R
+import com.dicoding.crimelessapps.ui.Authentication.ConfirmationActivity
 import com.dicoding.crimelessapps.ui.Authentication.LoginActivity
 import com.dicoding.crimelessapps.ui.Data.PrivatePhone
 import com.google.firebase.firestore.ktx.firestore
@@ -53,7 +54,7 @@ class PrivatePhoneActivity : AppCompatActivity() {
                     )
                         .show()
                     delay(2000)
-                    Intent(this@PrivatePhoneActivity, LoginActivity::class.java).also {
+                    Intent(this@PrivatePhoneActivity, ConfirmationActivity::class.java).also {
                         startActivity(it)
                     }
                 }
