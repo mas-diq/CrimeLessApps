@@ -18,11 +18,11 @@
 ## Project's Prototype :star2:
 
 <p align="center">
-<img  width="160px" src="https://github.com/mas-diq/CrimeLessApps/blob/master/gif1.gif" />
-<img  width="160px" src="https://github.com/mas-diq/CrimeLessApps/blob/master/gif2.gif" />
-<img  width="160px" src="https://github.com/mas-diq/CrimeLessApps/blob/master/gif3.gif" />
-<img  width="160px" src="https://github.com/mas-diq/CrimeLessApps/blob/master/gif4.gif" />
-<img  width="160px" src="https://github.com/mas-diq/CrimeLessApps/blob/master/gif5.gif" />
+<img  width="160px" src="https://github.com/mas-diq/CrimeLessApps/blob/master/captures/gif1.gif" />
+<img  width="160px" src="https://github.com/mas-diq/CrimeLessApps/blob/master/captures/gif2.gif" />
+<img  width="160px" src="https://github.com/mas-diq/CrimeLessApps/blob/master/captures/gif3.gif" />
+<img  width="160px" src="https://github.com/mas-diq/CrimeLessApps/blob/master/captures/gif4.gif" />
+<img  width="160px" src="https://github.com/mas-diq/CrimeLessApps/blob/master/captures/gif5.gif" />
 </p>
 <br>
 
