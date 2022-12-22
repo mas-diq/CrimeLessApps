@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <p align="center">
   <br>
-  <img  width="1280px" src="https://github.com/mas-diq/CrimeLessApps/blob/master/Crimeless.png" />
+  <img  width="1280px" src="https://github.com/mas-diq/CrimeLessApps/blob/master/captures/CrimeLess.png" />
   <h3 align="center">The Smart Security System</h3>
   <p align="justify">
     Crimeless App is a house security application that can detect the presence of strangers when the house is leave by the owner. The application uses machine learning for data processing in the form of videos that run on cloud technology, and sends notifications of the presence of strangers into the android application.
